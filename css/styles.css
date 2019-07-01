@@ -289,7 +289,7 @@ input:focus, textarea:focus {
 /* Support
 —————————————————————————————————————————————————————————————————————— */
 
-.user-talk, .border-dotted-botom {
+.border-dotted-botom {
 	border-bottom: 1px dotted #555;
 }
 
