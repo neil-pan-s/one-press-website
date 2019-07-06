@@ -27,11 +27,11 @@
   
       <meta name="author" content="Neil Pan">
   
-
+  
   <!-- Pure CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.9.0/css/font-awesome.min.css"> -->
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet"> -->
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/styles.css">
@@ -63,8 +63,56 @@
 
   <body>
     
-      <!-- Swiper -->
-<div class="swiper-container d-lg-">
+      <!-- Link Swiper's CSS, only PC browsers load! -->
+<!-- <link rel="stylesheet" href="/css/swiper.min.css"> -->
+<link rel="stylesheet" href="/css/swiper.min.css" media="screen and (min-width:960px)">
+
+<style>
+  /* avoid ios scrollbar not appear */
+  @media screen and (min-width:960px) {
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  body 
+  {
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    background: #fff;
+    overflow: hidden;
+  }
+  
+  .swiper-pagination {
+    right: 30px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #000;
+  }
+  
+  .mb-sm-5 {
+    margin-bottom: 0rem !important;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .mb-sm-5 {
+      margin-bottom: 5rem !important;
+    }
+  }
+</style>
+
+<!-- Swiper -->
+<div class="swiper-container">
   <div class="swiper-wrapper">
       <div class="swiper-slide">
         <!-- Header -->
@@ -80,39 +128,39 @@
   <div class="collapse navbar-collapse text-center" id="navbarCollapse">
     <ul class="navbar-nav ml-auto my-auto">
       
-        <li class="nav-item">
+        <li class="nav-item sans-serif">
           
             <a class="nav-link" href="/">壹周边</a>
           
         </li>
       
-        <li class="nav-item">
+        <li class="nav-item sans-serif">
           
             <a class="nav-link" href="/products/">周边产品定制</a>
           
         </li>
       
-        <li class="nav-item">
+        <li class="nav-item sans-serif">
           
             <a class="nav-link" href="/store/">入驻品牌集市·小程序</a>
           
         </li>
       
-        <li class="nav-item">
+        <li class="nav-item sans-serif">
           
             <a class="nav-link" href="/shop/">示范店</a>
           
         </li>
       
-        <li class="nav-item">
+        <li class="nav-item sans-serif">
           
             <a class="nav-link" href="/agreement/">服务协议</a>
           
         </li>
       
-        <li class="nav-item">
+        <li class="nav-item sans-serif">
           
-            <a class="nav-link" href="/support/">营销支持</a>
+            <a class="nav-link" href="/support/">帮助与支持</a>
           
         </li>
       
@@ -135,13 +183,13 @@
         <div class="row w-100 fat m-0 mt-5">
           <div class="col-12 text-center mt-5 mb-5">
             <img src="/images/one-press-black.svg" style="width: 100px;"/>
-            <h3 class="text-center mt-5">打造小IP周边产品服务商</h3>
+            <h3 class="text-center mt-5 fat">打造小IP周边产品服务商</h3>
           </div>
         </div>
 
         <div class="row w-100 m-0 thin">
           <div class="offset-lg-1 col-lg-3 col-sm-12 text-center mt-5">
-            <i class="fas fa-store" style="font-size:50px;"></i>
+            <i class="fas fa-box-open" style="font-size:50px;"></i>
             <p class="text-center mt-5"><b>周边产品定制供应链服务</b> </p>
             品质供应商 + 全品类周边产品 + 质量把控
           </div>
@@ -149,13 +197,14 @@
           <div class="col-lg-3 col-sm-12 text-center mt-5">
             <i class="fas fa-shipping-fast" style="font-size:50px;"></i>
             <p class="text-center mt-5"><b>基础店铺运营服务</b> </p>
-            代发货服务 + 客服服务
+            小规模囤货服务 + 代发货 + 客服服务
           </div>
           
           <div class="col-lg-3 col-sm-12 text-center mt-5">
-            <i class="fas fa-box-open" style="font-size:50px;"></i>
-            <p class="text-center mt-5"><b>囤货库存管理服务</b> </p>
-            小规模囤货服务, 低门槛让小IP拥有周边店铺
+            <i class="fas fa-store" style="font-size:50px;"></i>
+            <p class="text-center mt-5"><b>社交电商店铺建设服务</b> </p>
+            抓住社交电商红利 打通<b>微店、小程序</b>等平台 <br/>
+            快速、低门槛让小IP拥有社交电商店铺
           </div>          
         </div>
 
@@ -164,7 +213,7 @@
         <div class="row w-100 fat m-0 mt-5">
           <div class="col-12 text-center mt-5 mb-5">
             <i class="fas fa-handshake" style="font-size: 70px;"></i>
-            <h3 class="text-center mt-5">甩手掌柜模式</h3>
+            <h3 class="text-center mt-5 fat">甩手掌柜模式</h3>
             <p class="text-center thin mt-3">IP负责流量、宣传、变现 壹周边生产、物流、交付</p>
           </div>  
         </div>
@@ -191,12 +240,12 @@
       <div class="swiper-slide">
         <div class="row w-100 m-0 mt-5 one-press-price">
           <div class="col-6 p-0 text-right mt-5"> 
-            <h3 class="pr-3 pb-3">招商折扣价</h3> 
-            <h3 class="pr-3 pb-3">两人成团优惠价</h3> 
+            <h3 class="pr-3 pb-3 fat">招商折扣价</h3> 
+            <h3 class="pr-3 pb-3 fat">两人成团优惠价</h3> 
           </div>
           <div class="col-6 text-left p-0 mt-5"> 
-            <h3 class="pl-3 pb-3">¥ 199 / 年</h3> 
-            <h3 class="pl-3 pb-3">¥ 169 / 年</h3>
+            <h3 class="pl-3 pb-3 fat">¥ 199 / 年</h3> 
+            <h3 class="pl-3 pb-3 fat">¥ 169 / 年</h3>
           </div>
         </div>
 
@@ -284,11 +333,14 @@
     </div>
 
     <div class="footer-float-left">
-        <p class="copyright">Copyright © 2019 | <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备18035308号-3</a> | <a href="/images/wx-customer-service.jpg" target="_blank"> 商务合作 </a> </p>
+        <p class="copyright sans-serif">Copyright © 2019 | <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备18035308号-3</a> | <a href="/images/wx-customer-service.jpg" target="_blank"> 商务合作 </a> </p>
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<!-- Bootstarp Use -->
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+<!-- Bootstarp & Swiper Use -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
@@ -298,7 +350,8 @@
       </div>
   </div>
   <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
+  <!-- <div class="swiper-pagination"></div> -->
+  <div class="swiper-scrollbar"></div>
 </div>
 
 <div class="customer-service">        
@@ -393,17 +446,13 @@
 }
 </style>
 
-<!-- Link Swiper's CSS, only PC browsers load! -->
-<!-- <link rel="stylesheet" href="/css/swiper.min.css"> -->
-<link rel="stylesheet" href="/css/swiper.min.css" media="screen and (min-width:960px)">
-
 <!-- Swiper JS -->
 <script src="/js/swiper.min.js"></script>
 <script src="/js/enquire.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
-
   enquire.register("screen and (min-width:960px)", {
     match: function() {
       var swiper = new Swiper('.swiper-container', {
@@ -413,49 +462,29 @@
           mousewheel: true,
           keyboard: true,
           height: screen.availHeight,
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+          },          
           // pagination: {
           //   el: '.swiper-pagination',
           //   clickable: true,
           // },
       });
+      
+      // fix sometimes may cause mousewheel no-response 
+      $(".swiper-container").on("mousewheel", function(event) {  
+          if (swiper && !swiper.animating) {
+            (event.deltaY > 0) ? swiper.slidePrev(500) : swiper.slideNext(500);
+          }
+
+          return false;
+        }
+      )
     }
   });
 
 </script> 
-
-<style>
-html, body {
-  position: relative;
-  height: 100%;
-}
-.swiper-container {
-	width: 100%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.swiper-slide {
-  background: #fff;
-}
-
-.swiper-pagination {
-  right: 30px !important;
-}
-
-.swiper-pagination-bullet-active {
-  background: #000;
-}
-
-.mb-sm-5 {
-  margin-bottom: 0rem !important;
-}
-
-@media screen and (max-width: 992px) {
-  .mb-sm-5 {
-    margin-bottom: 5rem !important;
-  }
-}
-</style>
     
     
   </body>

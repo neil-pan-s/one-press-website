@@ -1,7 +1,33 @@
+html,body {
+	overflow-x: hidden;
+}
+
 body {
-	font-family: 'EB Garamond', serif;
+	font-family: tahoma, "Microsoft YaHei", Simsun, Mingliu, Arial, Helvetica, serif;
 	font-size: 1.25rem;
 	color: #333;
+}
+
+.serif {
+	font-family: serif;
+}
+
+.sans-serif {
+	font-family: sans-serif;
+}
+
+.thin {
+	font-family: "Microsoft YaHei", sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+.fat {
+	font-family: Simsun, serif;
+	font-weight: 600;
+	line-height: 1.1;
 }
 
 a, a:visited, a:active, a:focus {
@@ -51,20 +77,6 @@ blockquote {
 	padding: 30px;
 }
 
-.thin {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: 300;
-	letter-spacing: 2px;
-}
-
-.fat {
-	font-family: 'EB Garamond', serif;
-	font-weight: 500;
-	line-height: 1.1;
-}
-
 /* Forms
 —————————————————————————————————————————————————————————————————————— */
 
@@ -111,7 +123,6 @@ input:focus, textarea:focus {
 }
 
 .nav-item {
-	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 0.8rem;
 	font-weight: 300;
@@ -182,7 +193,6 @@ input:focus, textarea:focus {
 
 .date {
 	color: #666;
-	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	font-weight: 300;
@@ -198,7 +208,6 @@ input:focus, textarea:focus {
 .product-price {
 	display: block;
 	color: #666;
-	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 1rem;
 	font-weight: 300;
@@ -210,7 +219,6 @@ input:focus, textarea:focus {
 	text-align: center;
 	padding: 0;
 
-	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 0.8rem;
 	font-weight: 300;
@@ -361,7 +369,6 @@ footer {
 }
 
 footer .copyright {
-	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	font-weight: 300;
