@@ -135,86 +135,252 @@
 
 
         <div class="row">
-          
+          <!-- Link Swiper's CSS, only PC browsers load! -->
+<!-- <link rel="stylesheet" href="/css/swiper.min.css"> -->
+<link rel="stylesheet" href="/css/swiper.min.css" media="screen and (min-width:960px)">
 
-    
-    <div class="col-lg-4 col-md-6 col-12 mb-5">
-      <div class="image-box">
-        <div class="post-image">
-          <a href="/notebook-01/">
-            <img class="img-fluid" src="/images/products/notebook/01/main.jpg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="post-details text-center mt-3">
-        <a class="product-title" href="/notebook-01/">原色牛皮纸本定制-三本装</a>
-        <span class="product-price sans-serif">¥ 15</span>
+<style>
+  /* avoid ios scrollbar not appear */
+  @media screen and (min-width:960px) {
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+
+    body 
+    {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 22px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      transition: 300ms;
+      transform: scale(1.0);
+    }
+    .swiper-slide-active,.swiper-slide-duplicate-active{
+      transform: scale(1.2);
+    }
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+  }
+  .swiper-slide div{
+    text-align: center; 
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .swiper-slide span {
+    display: block;
+    color: #000;
+  }
+  .swiper-pagination-bullet-active {
+    background: #000;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+</style>
+
+<h3 class="col-12 text-center text-lg-left fat">   
+  <span>壹周边手工·拆裱</span> 
+</h3>
+
+<!-- Swiper -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/01.JPG" />
+        <span class="thin">旧手机拆裱</span>
       </div>
     </div>
-  
-    <div class="col-lg-4 col-md-6 col-12 mb-5">
-      <div class="image-box">
-        <div class="post-image">
-          <a href="/notebook-02/">
-            <img class="img-fluid" src="/images/products/notebook/02/main.jpg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="post-details text-center mt-3">
-        <a class="product-title" href="/notebook-02/">彩色牛皮纸本定制-三本装</a>
-        <span class="product-price sans-serif">¥ 20</span>
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/02.JPG" />
+        <span class="thin">旧手表拆裱</span>
       </div>
     </div>
-  
-    <div class="col-lg-4 col-md-6 col-12 mb-5">
-      <div class="image-box">
-        <div class="post-image">
-          <a href="/notebook-03/">
-            <img class="img-fluid" src="/images/products/notebook/03/main.jpg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="post-details text-center mt-3">
-        <a class="product-title" href="/notebook-03/">牛皮纸胶装本定制</a>
-        <span class="product-price sans-serif">¥ 20</span>
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/07.JPG" />
+        <span class="thin">旧笔拆裱</span>
       </div>
     </div>
-  
-    <div class="col-lg-4 col-md-6 col-12 mb-5">
-      <div class="image-box">
-        <div class="post-image">
-          <a href="/notebook-04/">
-            <img class="img-fluid" src="/images/products/notebook/04/main.jpg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="post-details text-center mt-3">
-        <a class="product-title" href="/notebook-04/">硬面绑带本定制</a>
-        <span class="product-price sans-serif">¥ 30</span>
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/04.JPG" />
+        <span class="thin">旧笔记本拆裱</span>
       </div>
     </div>
-  
-    <div class="col-lg-4 col-md-6 col-12 mb-5">
-      <div class="image-box">
-        <div class="post-image">
-          <a href="/notebook-05/">
-            <img class="img-fluid" src="/images/products/notebook/05/main.jpg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="post-details text-center mt-3">
-        <a class="product-title" href="/notebook-05/">真皮复古手账本定制</a>
-        <span class="product-price sans-serif">¥ 78</span>
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/05.JPG" />
+        <span class="thin">旧随身听拆裱</span>
       </div>
     </div>
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/06.JPG" />
+        <span class="thin">旧手机拆裱</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div>
+        <img src="/images/handwork/03.JPG" />
+        <span class="thin">旧相机拆裱</span>
+      </div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <!-- <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div> -->
+</div>
+
+<h3 class="col-12 text-center text-lg-left fat">   
+  <span>手工·拆裱流程</span>
+</h3>
+
+<div class="row w-100 m-0 mb-5 thin">
+  <div class="offset-lg-2 col-lg-3 col-sm-12 text-center mt-5">
+    <i style="font-size:50px;">拆解</i>
+    <!-- <p class="text-center mt-5"><b>1</b> </p> -->
+  </div>
+
+  <div class="col-lg-3 col-sm-12 text-center mt-5">
+    <i style="font-size:50px;">精洗</i>
+    <!-- <p class="text-center mt-5"><b>2</b> </p> -->
+  </div>
   
+  <div class="col-lg-3 col-sm-12 text-center mt-5">
+    <i style="font-size:50px;">装裱</i>
+    <!-- <p class="text-center mt-5"><b>3</b> </p> -->
+  </div>        
+</div>
 
-  
+<div class="col-12 text-center ml-lg-5 mb-5 thin">
+  每一件旧物 皆由设计师纯手工拆解清洗 精心布局装裱 让物件的意义延续
+</div>
 
-  
+<h3 class="col-12 text-center text-lg-left mt-5 mb-5 fat">   
+  手工·拆裱介绍
+</h3>
 
+<div class="row w-100 m-0 mb-5">
+  <div class="col-12 col-lg-3 offset-lg-1 mb-5">
+    <img class="w-100 zoomify" src="/images/handwork/design.png"/>
+  </div>
+  <div class="col-12 col-lg-7 offset-lg-1 thin d-flex align-items-center mb-5">
+    <p>
+      <b>为旧物 赋予新生命</b><br>
+      <br>
+      一直藏在抽屉的那些物件 多年你都不曾舍弃 于你一定有着独特的意义<br>
+      <br>
+      那只手表 或许勾起你对某个人的满满记忆<br>
+      那只手机 或许还留着曾经的照片和信息<br>
+      那只相机 或许陪伴过你去过世界各地<br>
+      <!-- ... <br> -->
+      <br>
+      出于纯粹的设计美感 出于旧物于你的意义<br>
+      与其搁置在角落的一边 拆裱为一件艺术品 赋予旧物新的生命吧   
+      <br>
+      <br>
+      装裱不限于以上物件 我们希望探索旧物改造的新形式 延续物件的意义 <br/>
+      把你的物件寄给我们 我们会独立设计每一件物品 找到合适的表现方式 <br/>
+    </p>
+  </div>
+</div>
 
+<div class="row w-100 m-0 mb-5">
+  <div class="col-12 col-lg-6 offset-lg-1 thin d-flex align-items-center mb-5">
+    <p>
+      <b>实木立体装裱画框</b> 
+      <br>
+      <br>
+      采用特殊定制的实木立体装裱画框<br>
+      简洁兼具质感 采用优质橡木制作 支持任意尺寸定制<br>
+      <br>
+      白橡木、黑橡木可选<br>
+    </p>
+  </div>
+  <div class="col-12 col-lg-4 mb-5">
+    <img class="w-100 zoomify" src="/images/handwork/frame.jpg" style="border-radius: 4px; box-shadow:0px 0px 15px 5px #ccc;"/> 
+  </div>
+</div>
 
+<h3 class="col-12 text-center text-lg-left mt-5 mb-5 fat">   
+  手工·拆裱下单
+</h3>
+
+<div class="row w-100 m-0 mb-5">
+  <div class="col-12 col-lg-3 offset-lg-1 mb-5">
+    <img class="w-100 zoomify" src="/images/wx-customer-service.jpg" style="width: 150px;"/>
+  </div>
+  <div class="col-12 col-lg-7 offset-lg-1 thin d-flex align-items-center mb-5">
+    <p>
+      <b class="d-block w-100 text-left">¥ 299 起/件 </b>
+      <br/>
+      不同物件所需要的工时物料不同 费用不同 下单前请具体咨询设计师<br/>
+      装裱大小 一般为A4、A3大小 视具体物件而定<br>
+      设计师排单一般在15个工作日内完成寄回<br/>
+      <br/>
+      设计师24小时在线 不定时直播装裱设计过程<br/>
+      欢迎关注设计师 随时咨询下单 <br/> 
+    </p>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="/js/swiper.min.js"></script>
+<script src="/js/enquire.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  enquire.register("screen and (min-width:960px)", {
+    match: function() {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+      });
+    }
+  });
+
+</script> 
         </div>
         
 
