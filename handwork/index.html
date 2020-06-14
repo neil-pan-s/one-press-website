@@ -168,23 +168,6 @@
     }
   }
 
-  @media screen and (min-width:1280px) {
-
-    :not(:root):fullscreen::backdrop {
-      background:#fff !important;
-    }
-
-    #fullscreen {
-      position: fixed;
-      bottom: 2em;
-      right: 3em;
-      width: 40px;
-      height: 40px;
-      background: #fff url('/images/handwork/full-screen.png') no-repeat;
-      background-size:cover;
-    }
-  }
-
   html, body {
     position: relative;
     height: 100%;
@@ -374,8 +357,6 @@
   </div>
 </div>
 
-<div id="fullscreen"></div>
-
 <!-- Swiper JS -->
 <script src="/js/swiper.min.js"></script>
 <script src="/js/enquire.min.js"></script>
@@ -401,10 +382,6 @@
       });
     }
   });
-
-  document.querySelector('#fullscreen').onclick = function () {
-    if (screenfull.isEnabled) { screenfull.toggle($('body')[0]); }
-  }
 
 </script> 
         </div>
